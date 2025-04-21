@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <!-- Weather App content goes here -->
+        <div class="left-side">
+            <!-- Left side content like tempterature, location, search bar, etc -->
+            <div class="searchbar-container">
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                             id="location-btn"/>
+                </svg>
+                <input type="text" placeholder="Enter Location ..." id="location-bar">
+            </div>
+
+            <div class="display-container">
+                <!-- Display temperature -->
+                 <div class="display-weather">
+                    <h1 id="display-temp"></h1>
+                    <h2 id="display-condition"></h2>
+                    <p id="display-paragraph"></p>
+                 </div>
+
+                 <div class="info-grid">
+                    <div class="rows">
+                        <div class="boxes">
+                            <div class="box-header">
+                                <!-- Add image for header-->
+                                <h5>FEELS LIKE</h5>
+                                <h4 id="feels-like"></h4>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div class="box-header">
+                                <!-- Add image for header-->
+                                <h5>PRECIPITATION</h5>
+                                <h4 id="precipitation"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="boxes">
+                            <div class="box-header">
+                                <!-- Add image for header-->
+                                <h5>VISIBILITY</h5>
+                                <h4 id="visibility"></h4>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div class="box-header">
+                                <!-- Add image for header-->
+                                <h5>HUMIDITY</h5>
+                                <h4 id="humidity"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="right-side">
+            <!-- Right side content hourly/forecast, etc-->
+            <div class="hourly-container">
+                <div class="forecast-header">
+                    <h5>HOURLY FORECAST</h5>
+                <hr>
+                </div>
+
+                <!-- Append the hourly forecast div elements here-->
+                <div id="hourly-forecast">
+
+                </div>
+
+            </div>
+
+            <div class="day-container">
+                <div class="forecast-header">
+                    <h5>10 DAY FORECAST</h5>
+                    <hr>
+                </div>
+
+                <!-- Append the day forecast div elements here-->
+                <div id="day-forecast">
+                    
+                </div>
+
+            </div>
+
+            <!-- Add another div element here for UV INDEX AND WIND, etc-->
+            <div class="uv-wind-container">
+                <div id="uv-info">
+                    <h5>UV INDEX</h5>
+                </div>
+                <div id="wind-info">
+                    <h5>WIND</h5>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

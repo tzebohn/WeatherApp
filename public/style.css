@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body {
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-side {
+    border: 1px, solid, blue;
+    padding: 10px;
+    width: 40%;
+    max-width: 400px;
+}
+
+.right-side {
+    padding: 10px;
+    border: 1px, solid, rgb(30, 255, 0);
+    width: 60%;
+}
+
+.searchbar-container {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.location-icon {
+    width: 18px;
+    height: 18px;
+    fill: #2c2c2c;
+    stroke: white;
+    stroke-width: 1.5;
+    
+}
+
+.location-icon:hover {
+    stroke: yellow;
+    cursor: pointer;
+}
+
+
+#location-bar {
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    width: 60%;
+}
+
+#location-bar::placeholder {
+    color: #ccc;
+}
+
+.display-container {
+    background-color: transparent;
+    border: 1px solid yellow;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.info-grid {
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 2px solid #30cf1b;
+    gap: 20px;
+}
+
+.box-header {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+#hourly-forecast {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid pink;
+    box-sizing: border-box;
+    padding: 0 20px;
+}       
+
+.day-forecast {
+    display: flex;
+    gap: 10px;
+
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.display-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    border: 1px solid red;
+}
+
+#day-forecast{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 1px solid pink;
+}
+
+.uv-wind-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#display-paragraph {
+    font-size: 13px;
+}
